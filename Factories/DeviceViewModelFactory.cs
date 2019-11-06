@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UiCommand.Models;
+﻿using UiCommand.Models;
 using UiCommand.ViewModels;
 
 namespace UiCommand.Factories
