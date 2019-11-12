@@ -7,7 +7,6 @@ namespace UiCommand.ViewModels
 
 	public class NamedViewModelCommand : ViewModelBase, ICommand
 	{
-		private string _commandKey;
 		private string _commandName;
 		private Predicate<object> _canExecute;
 		private Action<object> _execute;

@@ -5,8 +5,8 @@ namespace UiCommand.ViewModels
 {
 	public class MainViewModel : ViewModelBase, IMainViewModel
 	{
-		private DeviceService _deviceService;
-		public MainViewModel(DeviceService deviceService)
+		private IDeviceService _deviceService;
+		public MainViewModel(IDeviceService deviceService)
 		{
 			_deviceService = deviceService;
 			AvailableDevices = _deviceService.GetDevicePickList();
