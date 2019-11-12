@@ -5,12 +5,12 @@ using System.ComponentModel;
 
 namespace UiCommand.ViewModels
 {
-	public class NamedViewModelCommandCollection : ObservableCollection<NamedViewModelCommand>, ICollection<NamedViewModelCommand>, INotifyCollectionChanged, INotifyPropertyChanged
+	public class NamedViewModelCommandCollection : ObservableCollection<NamedCommand>, ICollection<NamedCommand>, INotifyCollectionChanged, INotifyPropertyChanged
 	{
 		public NamedViewModelCommandCollection() : base() { }
 
-		public NamedViewModelCommandCollection(List<NamedViewModelCommand> list) : base(list) { }
+		public NamedViewModelCommandCollection(List<NamedCommand> list) : base(list) { }
 
-		public NamedViewModelCommandCollection(IEnumerable<NamedViewModelCommand> collection) : base(collection) { }
+		public NamedViewModelCommandCollection(IEnumerable<NamedCommand> collection) : base(collection) { }
 	}
 }

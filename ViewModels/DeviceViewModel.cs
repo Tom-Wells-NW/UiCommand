@@ -13,9 +13,9 @@ namespace UiCommand.ViewModels
 
 		private void CreateDeviceCommands()
 		{
-			PingDeviceCommand = new NamedViewModelCommand("Ping", _ => Device.PingDevice(), _ => CanExecuteDeviceCommand());
-			DisableDeviceCommand = new NamedViewModelCommand("Disable", _ => Device.DisableDevice(), _ => CanExecuteDeviceCommand());
-			EnableDeviceCommand = new NamedViewModelCommand("Enable", _ => Device.EnableDevice(), _ => CanExecuteDeviceCommand());
+			PingDeviceCommand = new NamedCommand("Ping", _ => Device.PingDevice(), _ => CanExecuteDeviceCommand());
+			DisableDeviceCommand = new NamedCommand("Disable", _ => Device.DisableDevice(), _ => CanExecuteDeviceCommand());
+			EnableDeviceCommand = new NamedCommand(null, _ => Device.EnableDevice(), _ => CanExecuteDeviceCommand());
 		}
 
 		private IDevice _device;
@@ -32,22 +32,22 @@ namespace UiCommand.ViewModels
 		}
 
 
-		private NamedViewModelCommand _pingDeviceCommand;
-		public NamedViewModelCommand PingDeviceCommand
+		private NamedCommand _pingDeviceCommand;
+		public NamedCommand PingDeviceCommand
 		{
 			get { return _pingDeviceCommand; }
 			private set { Set(ref _pingDeviceCommand, value); }
 		}
 
-		private NamedViewModelCommand _disableDeviceCommand;
-		public NamedViewModelCommand DisableDeviceCommand
+		private NamedCommand _disableDeviceCommand;
+		public NamedCommand DisableDeviceCommand
 		{
 			get { return _disableDeviceCommand; }
 			private set { Set(ref _disableDeviceCommand, value); }
 		}
 
-		private NamedViewModelCommand _enableDeviceCommand;
-		public NamedViewModelCommand EnableDeviceCommand
+		private NamedCommand _enableDeviceCommand;
+		public NamedCommand EnableDeviceCommand
 		{
 			get { return _enableDeviceCommand; }
 			private set { Set(ref _enableDeviceCommand, value); }

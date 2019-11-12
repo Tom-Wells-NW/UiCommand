@@ -71,7 +71,7 @@
     <Compile Include="ViewModels\IDevicePickListViewModel.cs" />
     <Compile Include="ViewModels\IDeviceViewModel.cs" />
     <Compile Include="ViewModels\IMainViewModel.cs" />
-    <Compile Include="ViewModels\NamedViewModelCommand.cs" />
+    <Compile Include="ViewModels\NamedCommand.cs" />
     <Compile Include="ViewModels\NamedViewModelCommandCollection.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
