@@ -32,22 +32,22 @@ namespace UiCommand.ViewModels
 		}
 
 
-		private NamedCommand _pingDeviceCommand;
-		public NamedCommand PingDeviceCommand
+		private INamedCommand _pingDeviceCommand;
+		public INamedCommand PingDeviceCommand
 		{
 			get { return _pingDeviceCommand; }
 			private set { Set(ref _pingDeviceCommand, value); }
 		}
 
-		private NamedCommand _disableDeviceCommand;
-		public NamedCommand DisableDeviceCommand
+		private INamedCommand _disableDeviceCommand;
+		public INamedCommand DisableDeviceCommand
 		{
 			get { return _disableDeviceCommand; }
 			private set { Set(ref _disableDeviceCommand, value); }
 		}
 
-		private NamedCommand _enableDeviceCommand;
-		public NamedCommand EnableDeviceCommand
+		private INamedCommand _enableDeviceCommand;
+		public INamedCommand EnableDeviceCommand
 		{
 			get { return _enableDeviceCommand; }
 			private set { Set(ref _enableDeviceCommand, value); }

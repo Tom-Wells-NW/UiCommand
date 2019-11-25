@@ -5,8 +5,8 @@ namespace UiCommand.ViewModels
 	public interface IDeviceViewModel
 	{
 		IDevice Device { get; }
-		NamedCommand DisableDeviceCommand { get; }
-		NamedCommand EnableDeviceCommand { get; }
-		NamedCommand PingDeviceCommand { get; }
+		INamedCommand DisableDeviceCommand { get; }
+		INamedCommand EnableDeviceCommand { get; }
+		INamedCommand PingDeviceCommand { get; }
 	}
 }
