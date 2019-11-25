@@ -72,7 +72,7 @@
     <Compile Include="ViewModels\IDeviceViewModel.cs" />
     <Compile Include="ViewModels\IMainViewModel.cs" />
     <Compile Include="ViewModels\NamedCommand.cs" />
-    <Compile Include="ViewModels\NamedViewModelCommandCollection.cs" />
+    <Compile Include="ViewModels\NamedCommandCollection.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ViewModelLocator.cs" />
     <Compile Include="App.xaml.cs">

@@ -10,10 +10,22 @@ namespace UiCommand.ViewModels
 		{
 			var builder = new ContainerBuilder();
 
-			builder.RegisterType<DeviceViewModelFactory>().As<IDeviceViewModelFactory>().AsSelf();
-			builder.RegisterType<DeviceViewModelCollectionFactory>().As<IDeviceViewModelCollectionFactory>().AsSelf();
-			builder.RegisterType<MainViewModel>().As<IMainViewModel>().AsSelf();
-			builder.RegisterType<DeviceService>().As<IDeviceService>().AsSelf().SingleInstance();
+			builder.RegisterType<DeviceViewModelFactory>()
+                   .As<IDeviceViewModelFactory>()
+                   .AsSelf();
+			
+            builder.RegisterType<DeviceViewModelCollectionFactory>()
+                   .As<IDeviceViewModelCollectionFactory>()
+                   .AsSelf();
+
+			builder.RegisterType<MainViewModel>()
+                   .As<IMainViewModel>()
+                   .AsSelf();
+
+			builder.RegisterType<DeviceService>()
+                   .As<IDeviceService>().AsSelf()
+                   .SingleInstance();
+
 			//if (!ViewModelBase.IsInDesignModeStatic)
 			//{
 			//	//builder.RegisterModule<DataServiceModule>();
